@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider-container {
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  overflow: hidden;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  left: 0;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+
+.slides .slide {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+}
+
+.slides .slide img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.buttons-container button {
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 30px;
+  user-select: none;
+  cursor: pointer;
+  opacity: .5;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  position: absolute;
+}
+
+.buttons-container button:hover {
+  opacity: 1;
+}
+
+.buttons-container .nextButton {
+  background-color: rgb(0, 162, 255);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.buttons-container .prevButton {
+  background-color: rgb(255, 60, 60);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.buttons-container .randomButton {
+  background-color: rgb(255, 162, 0);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
